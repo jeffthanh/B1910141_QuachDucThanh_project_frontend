@@ -7,7 +7,7 @@
           <v-divider></v-divider>
           <v-form ref="form" @submit.prevent="submitForm" class="pa-5" enctype="multipart/form-data">
             <v-text-field label="Name" v-model="post.title" prepend-icon="mdi-note" :rules="rules"></v-text-field>
-            <v-text-field label="Author" v-model="post.category" prepend-icon="mdi-view-list"
+            <v-text-field label="Category" v-model="post.category" prepend-icon="mdi-view-list"
               :rules="rules"></v-text-field>
             <v-textarea label="Content" v-model="post.content" prepend-icon="mdi-note" :rules="rules"></v-textarea>
             <v-file-input @change="selectFile" :rules="rules" show-size counter multiple
